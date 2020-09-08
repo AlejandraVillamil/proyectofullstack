@@ -1,13 +1,49 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /***********Footer**************/
-footer{
+
+
+.footer img{
+    cursor: pointer;
+}
+.footer{
+    background: #272343 !important;
+    padding: 80px 0;
     text-align: center;
-    background: #BAE8E8;
-    padding: 1vw;   
+    color: #fff;
 }
 
-.footer_text{
-    font-size: 0.8rem;
-    font-style: italic;
-}
+    .footer .list-inline a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer .list-inline a:hover{
+        color: #1a1a1a;
+        background-color: #BAE8E8;
+    }
+
+    .footer .list-inline .list-inline-item{
+        padding: 10px 15px;
+    }
+    
+    .footer-icon{
+        font-size: 40px;
+        margin:0px 20px;
+    }    
+    .footer-icon a .fab{
+        background-color: #272343;
+    }
+    .footer-icon a .fab:hover{
+        background-color: #fff;
+        color: #272343;
+    }
+
+
+
+
 
 

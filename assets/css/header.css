@@ -1,6 +1,28 @@
 
-.menubar{
-    background-color: #272343;
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.navbar{
+    box-shadow: 2px 2px 5px #000;
+    opacity: 0.8;
+}
+.navbar-nav a{
+    color: #000000 !important;
+}
+
+.navbar a:hover{
+    background-color: #E3F6F5;
+}
+
+
+.navbar-toggler{
+    font-size: 30px; 
+}
+.navbar-toggler:focus{
+    outline: none;
+}
 

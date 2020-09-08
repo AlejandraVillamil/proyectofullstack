@@ -9,23 +9,47 @@
     <link href="assets/css/header.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body class="container">
-<div class="-flex flex-column">
+<body>
+
     <!----------------------------- Inicio cabecera ------------------------------------->
-    <header class="container menubar">
-        <!----Barra de navegación---->
-        <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light border border-bottom">
+            <a class="navbar-brand" href="#">
+                LOGO
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <!------------------------------- Fin cabecera -------------------------------------->
 
     <!-------------------------------- Inicio Main  ------------------------------------->
@@ -87,12 +111,31 @@
     <!-------------------------------- Fin Main  ------------------------------------->
 
     <!------------------------------ Inicio Footer ----------------------------------->
-    <footer class="footer">
-
-
+    <footer id="footer" class="footer my-5">
+        <div class="container">
+            <img src="imagenes/logo.gif" alt="logo" class="logo-brand">
+            <ul class="list-inline">
+                <li class="list-inline-item footer-menu"><a href="index.html"> Inicio</a></li>
+                <li class="list-inline-item footer-menu"><a href="#"> Nosotros </a></li>
+                <li class="list-inline-item footer-menu"><a href="#"> Registrarse</a></li>
+                <li class="list-inline-item footer-menu"><a href="#"> Iniciar sesión</a></li>
+            </ul>
+            <ul class="list-unstyled list-inline mt-4">
+                <li class="footer-icon">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <small>
+                Derechos reservados @2020
+            </small>
+        </div>
     </footer>
     <!------------------------------ Inicio Footer ----------------------------------->
-</div>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
