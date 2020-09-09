@@ -22,17 +22,16 @@ align-content: center;
 }
 
 
-
-.card{
+.card2{
 height: 370px;
 margin-top: auto;
 margin-bottom: auto;
 width: 275px;
-background-color: rgba(0,0,0,0.5) !important;
+background-color: rgba(0, 0, 0, 0.329) !important;
 }
 
 .social_icon span{
-font-size: 60px;
+font-size: 45px;
 margin-left: 10px;
 color: #FFC312;
 }
@@ -48,8 +47,8 @@ color: white;
 
 .social_icon{
 position: absolute;
-right: 45px;
-top: -45px;
+right: 70px;
+top: -10px;
 }
 
 .input-group-prepend span{
