@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,5 +11,86 @@ main {
     margin: 4vw;
     padding: 2vw;
 }
+ul{
+    color: white;
+}
+
+/*Estilos del POP-UP del LOGIN*/
+.container{
+height: auto;
+align-content: center;
+}
 
 
+.card2{
+margin-top: auto;
+margin-bottom: auto;
+width: 275px;
+background-color: rgba(0, 0, 0, 0.329) !important;
+z-index: 2;
+}
+
+.social_icon span{
+font-size: 45px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 70px;
+top: -10px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
