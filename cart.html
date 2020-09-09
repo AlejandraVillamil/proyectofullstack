@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif" href="./assets/Logo/ilustracion_Color.png" size="16x16">
+    <link rel="icon" type="image/gif" href="./assets/Logo/Favicon.png">
     <title>Carrito </title>
     <link rel="stylesheet" href="./assets/css/carrito.css">
     <link href="assets/css/header.css" rel="stylesheet" />
@@ -58,7 +58,80 @@
 
         <!-------------------------------- Carrito ------------------------------------->
 
-        <h1 class="h1 headerText">Carrito de compras</h1>
+ 
+        <div class="container-fluid row">
+            <div id="principal" class=" col-md-9">
+                <h2 class="h3 myText" id="titulo1">Mi Carrito</h2>
+                <div class="container serviceslist">
+                    <div class="row servicioEnLista">
+                        <div class="col-9 col-md-4">
+                            Servicio x
+                        </div>
+                        <div class="col-5 d-none d-md-inline">
+                            Descripcion del prestador y el servicio
+                        </div>
+                        <div class="col-2">
+                            $20.000
+                        </div>
+                        <div class="col-1">
+                            <button class="deleteItem">X</button>
+                        </div>
+                    </div>
+                    <div class="row servicioEnLista">
+                        <div class="col-9 col-md-4">
+                            Servicio x
+                        </div>
+                        <div class="col-5 d-none d-md-inline">
+                            Descripcion del prestador y el servicio
+                        </div>
+                        <div class="col-2">
+                            $20.000
+                        </div>
+                        <div class="col-1">
+                            <button class="deleteItem ">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <aside class=" col-md-3" >
+                <h2 class="h4 text-center myText" id="titulo2">Resumen de Pedido</h2>
+                <div id="cartSummary" class="myText container">
+                    <div class="row">
+                        <p class="myText mylist small col-8">Subtotal</p>
+                        <p class="myText  small col-4">$20.200</p>
+                    </div>
+                    <div class="row lastInList">
+                        <p class="myText mylist small col-8">Descuentos</p>
+                        <p class="myText small col-4">$20.200</p>
+
+                    </div>
+            
+                    <div class="row firstInList">
+                        <h4 class="h6 myText col-8"> Subtotal</h4>
+                        <p class="myText  col-4">$20.200</p>
+                    </div>
+                    <div class="row lastInList">
+                        <p class="myText mylist small col-8">IVA</p>
+                        <p class="myText  small  col-4 ">$20.200</p>
+                    </div>
+                    <div class="row firstInList">
+                        <h4 class="h5 myText col-8"> Total</h4>
+                        <p class="myText   col-4">$20.200</p>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <button class="justify-content-center" id="checkOutbtn"> Finalizar compra</button>
+                </div>
+                
+            </aside>
+    </div>
+
         <!-------------------------------- Carrito------------------------------------->
 
     </main>
