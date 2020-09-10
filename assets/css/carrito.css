@@ -66,10 +66,11 @@ aside .mylist {
 
 #emptyCartImg {
   opacity: 0.3;
-  width: 300px;
-  height: auto;
-  position: absolute;
-  top: 40;
-  left: 50; }
+  width: 100px;
+  height: auto; }
+
+.mylink {
+  color: #272343;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=carrito.css.map */
