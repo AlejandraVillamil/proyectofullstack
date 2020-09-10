@@ -4,43 +4,106 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-/***********Footer**************/
 
+
+/***********Footer**************/
 
 .footer img{
     cursor: pointer;
 }
+
+
 .footer{
-    background: #272343 !important;
-    padding: 80px 0;
-    text-align: center;
-    color: #fff;
+    background: #272343;
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+    .partFooter{
+        width: 20%;
+        text-align: center;
+    }
+        .partFooter h4{
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        .partFooter a{
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 300;
+            transition: color 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
+        .partFooter a:hover{
+            color: #BAE8E8;
+            text-decoration: none;
+        }
+
+        .partFooter img{
+            width: 70%;
+        }
+
+        .social-media i{
+            font-size: 20px;
+            display: inline-block;
+            color: #ffffff;
+            border: 1px solid #BAE8E8;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            line-height: 36px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+            transition: all ease-in-out 0.3s;
+            margin-right: 5px;
+        }
+        .social-media i:hover{
+            color: #fff;
+            background: #BAE8E8; 
+            border-color: #BAE8E8;
+        }
+
+
+
+
+/* Web Responsive */
+
+@media screen and (max-width:800px){
+    .footer{
+        justify-content: space-evenly;
+    }
+        .partFooter{
+            width: 40%;
+            margin-bottom: 40px;
+        }
+    .titulo{
+        font-size: 45px;       
+    }
 }
 
-    .footer .list-inline a{
-        color: #fff;
-        text-decoration: none;
-    }
-    .footer .list-inline a:hover{
-        color: #1a1a1a;
-        background-color: #BAE8E8;
+@media screen and (max-width:600px){
+     /* footer */
+    .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
     }
 
-    .footer .list-inline .list-inline-item{
-        padding: 10px 15px;
-    }
-    
-    .footer-icon{
-        font-size: 40px;
-        margin:0px 20px;
-    }    
-    .footer-icon a .fab{
-        background-color: #272343;
-    }
-    .footer-icon a .fab:hover{
-        background-color: #fff;
-        color: #272343;
-    }
+
+}
+
+
+
+
+
+
+
 
 
 
