@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif" href="./assets/Logo/Favicon.png">
-    <title>Inicio </title>
-
-    <link href="assets/css/header.css" rel="stylesheet" />
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link rel="icon" type="image/gif" href="../Logo/Favicon.png">
+    <title>Perfil </title>
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/profile.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -22,7 +22,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light border border-bottom">
             <a class="navbar-brand" href="#">
-                <img src="./assets/Logo/logoNavBar.png" alt="Logo Maki" id="navBarLogo">
+                <img src="../Logo/logoNavBar.png" alt="Logo Maki" id="navBarLogo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,52 +39,57 @@
                     </li>
                     <li>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Login </a>
-                              <div class="dropdown-menu mt-3">
-                                <div class="card2 bg-white">
-                                    <div class="card-header mt-4 bg-white">
-                                        <div class="d-flex social_icon">
-                                            <span><i class="fab fa-facebook-square text-secondary"></i></span>
-                                            <span><i class="fab fa-google-plus-square  text-secondary"></i></span>
-                                            <span><i class="fab fa-twitter-square  text-secondary"></i></span>
+                            <li class="dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"
+                                    aria-haspopup="true" aria-expanded="false">Login </a>
+                                <div class="dropdown-menu mt-3">
+                                    <div class="card2 bg-white">
+                                        <div class="card-header mt-4 bg-white">
+                                            <div class="d-flex social_icon">
+                                                <span><i class="fab fa-facebook-square text-secondary"></i></span>
+                                                <span><i class="fab fa-google-plus-square  text-secondary"></i></span>
+                                                <span><i class="fab fa-twitter-square  text-secondary"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <form id="formLogin" class="form container-fluid">
+                                                <div class="input-group form-group">
+                                                    <div class="input-group-prepend bg-info">
+                                                        <span class="input-group-text text-secondary bg-white"><i
+                                                                class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="Usuario">
+
+                                                </div>
+                                                <div class="input-group form-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text text-secondary bg-white"><i
+                                                                class="fas fa-key"></i></span>
+                                                    </div>
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Contraseña">
+                                                </div>
+                                                <div class="row align-items-center remember text-secondary">
+                                                    <input type="checkbox">Recordar
+                                                </div>
+                                                <button type="button" id="btnLogin"
+                                                    class="btn btn-block text-white btn-info">Ingresar</button>
+                                            </form>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="d-flex justify-content-center links  text-secondary">
+                                                ¿No tienes cuenta?<a href="#">Regístrate</a>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="#">¿Olvidaste tu contraseña?</a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card-body" >
-                                <form id="formLogin" class="form container-fluid">
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend bg-info">
-                                            <span class="input-group-text text-secondary bg-white"><i class="fas fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Usuario">
-                                        
-                                    </div>
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text text-secondary bg-white"><i class="fas fa-key"></i></span>
-                                        </div>
-                                        <input type="password" class="form-control" placeholder="Contraseña">
-                                    </div>
-                                    <div class="row align-items-center remember text-secondary">
-                                        <input type="checkbox">Recordar
-                                    </div>
-                                  <button type="button" id="btnLogin" class="btn btn-block text-white btn-info" >Ingresar</button>
-                                </form>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-center links  text-secondary">
-                                    ¿No tienes cuenta?<a href="#">Regístrate</a>
                                 </div>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#">¿Olvidaste tu contraseña?</a>
-                                </div>
-                                </div>
-                                </div>	
-                              </div>
                             </li>
-                          </ul>
-                    
+                        </ul>
+
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">Iniciar sesión</a>
                     </li>
@@ -101,57 +106,258 @@
     <!-------------------------------- Inicio Main  ------------------------------------->
     <main>
 
-        <!-------------------------------- Inicio sección categorias ------------------------------------->
-        <section class="container categories">
-            <div class="d-flex justify-content-center flex-wrap">
-                <button type="button" class="btn btn-info  m-1">Servicio 1</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 2</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 3</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 4</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 5</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 6</button>
+        <!-- Header usuario -->
+        <nav class="container">
+            <section id="userInfo" class="d-flex flex-column justify-content-center align-items-center bg-info p-2">
+                <img src="../src/images/avatar.jpg" width="100vw" height="100vw" class="rounded-circle" alt="">
+                <h2 class="text-white">María Rojas</h2>
+                <p class="text-white">Diseñadora gráfica egresada de la Universidad San Marino</p>
+            </section>
 
-            </div>
-        </section>
-        <!-------------------------------- Fin sección categorias ------------------------------------->
-        <!-------------------------------- Inicio sección servicios ------------------------------------->
-        <section class="container d-flex py-5 justify-content-center flex-wrap">
+            <section id="userMenu" class="container p-0">
+                <section class=" menuPerfil d-flex">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item myPill " role="presentation">
+                            <a class="nav-link active rounded-0" id="pills-info-tab" data-toggle="pill"
+                                href="#pills-info" role="tab" aria-controls="pills-info" aria-selected="true">Mis
+                                datos</a>
+                        </li>
+                        <li class="nav-item  myPill" role="presentation">
+                            <a class="nav-link  rounded-0" id="pills-pedidos-tab" data-toggle="pill"
+                                href="#pills-pedidos" role="tab" aria-controls="pills-pedidos" aria-selected="false">Mis
+                                pedidos</a>
+                        </li>
+                        <li class="nav-item  myPill" role="presentation">
+                            <a class="nav-link rounded-0" id="pills-ventas-tab" data-toggle="pill"
+                                href="#pills-ventas" role="tab" aria-controls="pills-ventas" aria-selected="false">Mis
+                                ventas</a>
+                        </li>
+                        <li class="nav-item  myPill" role="presentation">
+                            <a class="nav-link rounded-0" id="pills-msg-tab" data-toggle="pill" href="#pills-msg"
+                                role="tab" aria-controls="pills-msg" aria-selected="false">Mis mensajes</a>
+                        </li>
+                    </ul>
+                </section>
 
-            <div class="row  m-1">
-                <div class="card text-center " style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Servicio 1</b></h5>
-                        <p class="card-text">Descripción del servicio.</p>
-                        <h5 class="card-title">$50.000</h5>
-                        <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
+                <!-------------------------------- INICIO GRUPO DE PESTAÑAS  ------------------------------------->
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-------------------------------- Inicio pestaña Mi perfil  ------------------------------------->
+                    <div class="tab-pane fade show active" id="pills-info" role="tabpanel"
+                        aria-labelledby="pills-info-tab">
+                        <section class="p-5">
+                            <h3>Información personal</h3>
+                            <form>
+                                <div class="form-group avatar">
+                                    <figure class="figure col-md-2 col-sm-3 col-xs-12">
+                                        <img class="img-rounded img-responsive" src="../src/images/avatar.jpg"
+                                            width="60vw" height="60vw">
+                                    </figure>
+                                    <div class="form-inline col-md-10 col-sm-9 col-xs-12">
+                                        <input type="file" class="file-uploader pull-left">
+                                        <button type="submit" class="btn btn-sm btn-default-alt pull-left">Cambiar
+                                            imagen</button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">Usuario</label>
+                                    <input type="text" class="form-control" id="userName" placeholder="Usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                </div>
+                                <hr>
+                                <h3>Información de contacto</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Correo eletrónico</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Ingrese un correo electrónico">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="twitter">Twitter</label>
+                                        <input type="text" class="form-control" id="twitter"
+                                            placeholder="Usuario de Twitter">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="linkedin">Linkedin</label>
+                                        <input type="text" class="form-control" id="linkedin"
+                                            placeholder="Usuario de Linkedin">
+                                    </div>
+
+                                    <br>
+
+                                    <button type="submit" class="btn text-white"
+                                        style="background-color:#272343">Actualizar perfil</button>
+                                    <button type="submit" class="btn btn-secondary text-white">Cancelar</button>
+
+                                </form>
+
+
+                        </section>
                     </div>
-                </div>
-            </div>
+                    <!------------------------------------ Fin pestaña Mi perfil  ------------------------------------->
 
-            <div class="row m-1">
-                <div class="card text-center " style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Servicio 2</b></h5>
-                        <p class="card-text">Descripción del servicio.</p>
-                        <h5 class="card-title">$50.000</h5>
-                        <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
+                    <!-------------------------------- Inicio pestaña Mis pedidos  ------------------------------------->
+                    <div class="tab-pane fade" id="pills-pedidos" role="tabpanel" aria-labelledby="pills-pedidos-tab">
+                        <h3 class="px-5 pt-5">Pedidos nuevos</h3>
+                        <section class="container d-flex p-5 justify-content-center flex-wrap">
+
+                            <div class="row  m-1">
+                                <div class="card text-center " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 001</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 05/09/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b>Nuevo<h6>
+                                                <h3 class="card-title">$60.000</h3>
+                                                <a href="#" class="btn text-white"
+                                                    style="background-color:#272343">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-1">
+                                <div class="card text-center " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 002</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 03/09/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b> Nuevo<h6>
+                                                <h3 class="card-title">$30.000</h3>
+                                                <a href="#" class="btn text-white"
+                                                    style="background-color:#272343">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-1">
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 003</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 09/09/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b>Nuevo<h6>
+                                                <h3 class="card-title">$50.000</h3>
+                                                <a href="#" class="btn text-white" style="background-color:#272343">En
+                                                    curso</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <hr>
+                        <h3 class="px-5">Pedidos en curso</h3>
+                        <section class="container d-flex p-5 justify-content-center flex-wrap">
+
+                            <div class="row  m-1">
+                                <div class="card text-center " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 004</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 30/07/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b> En curso<h6>
+                                                <h3 class="card-title">$60.000</h3>
+                                                <a href="#" class="btn text-white"
+                                                    style="background-color:#272343">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <hr>
+                        <h3 class="px-5">Pedidos finalizados</h3>
+                        <section class="container d-flex p-5 justify-content-center flex-wrap">
+
+                            <div class="row m-1">
+                                <div class="card text-center " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 005</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 30/08/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b> Finalizado<h6>
+                                                <h3 class="card-title">$30.000</h3>
+                                                <a href="#" class="btn text-white"
+                                                    style="background-color:#272343">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </section>
                     </div>
-                </div>
-            </div>
+                    <!-------------------------------- Fin pestaña Mis pedidos ------------------------------------->
 
-            <div class="row m-1">
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Servicio 3</b></h5>
-                        <p class="card-text">Descripción del servicio.</p>
-                        <h3 class="card-title">$50.000</h3>
-                        <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
+                    <!-------------------------------- Inicio pestaña Mis Ventas  ------------------------------------->
+
+                    <div class="tab-pane fade" id="pills-ventas" role="tabpanel" aria-labelledby="pills-ventas-tab">
+                        <section class="container d-flex p-5 justify-content-center flex-wrap">
+
+                            <div class="row  m-1">
+                                <div class="card text-center " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 001</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 30/07/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b> En curso<h6>
+                                                <h3 class="card-title">$60.000</h3>
+                                                <a href="#" class="btn text-white"
+                                                    style="background-color:#272343">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-1">
+                                <div class="card text-center " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 002</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 30/08/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b> Finalizado<h6>
+                                                <h3 class="card-title">$30.000</h3>
+                                                <a href="#" class="btn text-white"
+                                                    style="background-color:#272343">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-1">
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><b>Pedido 003</b></h5>
+                                        <p class="card-text">Descripción del servicio.</p>
+                                        <h6 class="Date font-italic"><b>Fecha:</b> 01/08/2020</h6>
+                                        <h6 class="status font-italic"><b>Estado:</b> En curso<h6>
+                                                <h3 class="card-title">$50.000</h3>
+                                                <a href="#" class="btn text-white" style="background-color:#272343">En
+                                                    curso</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
                     </div>
-                </div>
-            </div>
+                    <!-------------------------------- Fin pestaña Mis Ventas  ------------------------------------->
 
-        </section>
-        <!-------------------------------- Fin sección servicios ------------------------------------->
+                    <!-------------------------------- Inicio pestaña Mis Mensdajes  ------------------------------------->
+                    <div class="tab-pane fade" id="pills-msg" role="tabpanel" aria-labelledby="pills-msg-tab">
+                        Módulo de mensajería</div>
+                </div>
+                <!-------------------------------- Fin pestaña Mis Mensdajes  ------------------------------------->
+                <!-------------------------------- FIN GRUPO DE PESTAÑAS  ------------------------------------->
+
+            </section>
+        </nav>
+
+
 
     </main>
     <!-------------------------------- Fin Main  ------------------------------------->
@@ -159,7 +365,7 @@
     <!------------------------------ Inicio Footer ----------------------------------->
     <footer id="footer" class="footer my-5">
         <div class="container">
-            <img src="./assets/Logo/logoMakyBlanco.png" alt="logo" class="logo-brand" height="100px" width="auto">
+            <img src="../Logo/logoMakyBlanco.png" alt="logo" class="logo-brand" height="100px" width="auto">
             <ul class="list-inline">
                 <li class="list-inline-item footer-menu"><a href="index.html"> Inicio</a></li>
                 <li class="list-inline-item footer-menu"><a href="#"> Nosotros </a></li>
@@ -184,13 +390,13 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 
