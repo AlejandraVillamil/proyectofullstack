@@ -66,3 +66,19 @@ aside{
          border: none;
     }
 }
+
+#clearCart{
+     background-color: #272343 ;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    width: 30%;
+    font-weight: 100;
+}
+#clearCart:hover,#checkOutbtn:hover{
+     background-color: #BAE8E8 ;
+    color:#272343 ;
+    
+}

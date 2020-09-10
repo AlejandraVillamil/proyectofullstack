@@ -58,11 +58,18 @@
 
         <!-------------------------------- Carrito ------------------------------------->
 
- 
+
         <div class="container-fluid row">
+
             <div id="principal" class=" col-md-9">
                 <h2 class="h3 myText" id="titulo1">Mi Carrito</h2>
-                <div class="container serviceslist">
+                <div class="d-none " id="emptyCart">
+                    <img src="./assets/img/sad.png" alt="" width="100px" height="auto">
+                    <p>El carrito está vacío</p>
+                    
+                    <a href="index.html">Seguir comprando</a>
+                </div>
+                <div class="container serviceslist" id="cartItems">
                     <div class="row servicioEnLista">
                         <div class="col-9 col-md-4">
                             Servicio x
@@ -92,9 +99,10 @@
                         </div>
                     </div>
                 </div>
+                <button class="justify-content-center" id="clearCart" onclick="clearCart()"> Vaciar carrito</button>
             </div>
-            
-            <aside class=" col-md-3" >
+
+            <aside class=" col-md-3">
                 <h2 class="h4 text-center myText" id="titulo2">Resumen de Pedido</h2>
                 <div id="cartSummary" class="myText container">
                     <div class="row">
@@ -106,7 +114,7 @@
                         <p class="myText small col-4">$20.200</p>
 
                     </div>
-            
+
                     <div class="row firstInList">
                         <h4 class="h6 myText col-8"> Subtotal</h4>
                         <p class="myText  col-4">$20.200</p>
@@ -119,18 +127,18 @@
                         <h4 class="h5 myText col-8"> Total</h4>
                         <p class="myText   col-4">$20.200</p>
                     </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
                     <button class="justify-content-center" id="checkOutbtn"> Finalizar compra</button>
                 </div>
-                
+
             </aside>
-    </div>
+        </div>
 
         <!-------------------------------- Carrito------------------------------------->
 
@@ -161,7 +169,7 @@
         </div>
     </footer>
     <!------------------------------ Inicio Footer ----------------------------------->
-
+    <script src="./assets/js/script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
