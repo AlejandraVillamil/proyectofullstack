@@ -4,6 +4,9 @@
 #titulo1, #titulo2 {
   margin-bottom: 30px; }
 
+.customContainer {
+  margin-top: 30px; }
+
 .deleteItem {
   width: 18px;
   height: 18px;
