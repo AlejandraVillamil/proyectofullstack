@@ -67,6 +67,12 @@ aside .mylist {
   color: #272343;
   text-decoration: underline; }
 
+#cart_container{
+  padding: 15vh;
+  margin:auto;
+}
+
+
 @media screen and (max-width: 766px) {
   #cartSummary {
     border: none; } }
