@@ -4,7 +4,6 @@
 #titulo1, #titulo2 {
   margin-bottom: 30px; }
 
-
 .deleteItem {
   width: 18px;
   height: 18px;
@@ -45,7 +44,6 @@ aside .mylist {
   #cartSummary .firstInList {
     padding-top: 15px; }
 
-
 #clearCart {
   background-color: #272343;
   color: white;
@@ -77,10 +75,3 @@ aside .mylist {
     margin-bottom: 0px; } }
 
 /*# sourceMappingURL=carrito.css.map */
-@media screen and (max-width: 1100px) {
-  #titulo1, #titulo2 {
-    margin-bottom: 0px; } }
-
- @media screen and (max-width: 766px) {
-   #cartSummary {
-     border: none; } }
