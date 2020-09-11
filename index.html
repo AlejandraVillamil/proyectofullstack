@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif" href="./assets/Logo/Favicon.png">
+    <link rel="icon" type="image/gif" href="../Logo/Favicon.png">
     <title>Inicio </title>
 
     <link href="assets/css/header.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="index.html">
-                <img src="../Logo/logoNavBar.png" alt="Logo Maki" id="navBarLogo">
+                <img src="assets/Logo/logoNavBar.png" alt="Logo Maki" id="navBarLogo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
                     </li>
                    
                      <li>
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
                      </li>      
                      <li class="nav-item">
                         <a class="nav-link" href="./assets/pages/form.html" >Regístrate</a>
@@ -46,10 +46,13 @@
                         <a class="nav-link"  data-toggle="modal" data-target="#login_itech" >Iniciar sesión</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="assets/pages/profile.html">Mi perfil</a>
+                    </li> 
+                    <li class="nav-item">
                         <a class="nav-link" href="assets/pages/cart.html">Carrito compras</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="assets/pages/form.html">Contacto</a>
+                        <a class="nav-link" href="#footer">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -67,8 +70,7 @@
 
         <!-------------------------------- Fin sección categorias ------------------------------------->
 
-
-        <!-- Portada principal -->
+  <!-- Portada principal -->
 
 
         <!-- Nuestro servicio -->
@@ -152,90 +154,50 @@
                     <div class="servi-item">
                         <a href="#"><i class="fas fa-address-card"></i></a>
                         <p>Trading & Pricing</p>
-    <!--POPUP-->
-    <div class="modal animated fadeIn" id="login_itech" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Password</label>
-                        <input type="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter password">
-                    </div>
-                    <div class="text-center" id="loader_itech">
-                        <button type="button" class="btn btn-primary">Login</button>
-                    </div>
+            </div>
+        </section>
+ <!-------------------------------- Inicio sección servicios ------------------------------------->
+ <section class="my-5 card-servi">
+    <h2 class="subtitulo pt-3 text-center">Servicios actuales</h2>
+    <hr class="w-100 bg-light">
+    <div class="container py-3 d-flex justify-content-around">
+        <div class="m-1">
+            <div class="card text-center " style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Servicio 1</b></h5>
+                    <p class="card-text">Descripción del servicio.</p>
+                    <h5 class="card-title">$50.000</h5>
+                    <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
                 </div>
             </div>
         </div>
+
+        <div class="m-1">
+            <div class="card text-center " style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Servicio 2</b></h5>
+                    <p class="card-text">Descripción del servicio.</p>
+                    <h5 class="card-title">$50.000</h5>
+                    <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="m-1">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Servicio 3</b></h5>
+                    <p class="card-text">Descripción del servicio.</p>
+                    <h5 class="card-title">$50.000</h5>
+                    <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!------------------------------- Fin cabecera -------------------------------------->
-
-    <!-------------------------------- Inicio Main  ------------------------------------->
-    <main>
-
-        <!-------------------------------- Inicio sección categorias ------------------------------------->
-        <section class="container categories">
-            <div class="d-flex justify-content-center flex-wrap">
-                <button type="button" class="btn btn-info  m-1">Servicio 1</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 2</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 3</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 4</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 5</button>
-                <button type="button" class="btn btn-info  m-1">Servicio 6</button>
-
-            </div>
-        </section>
-        <!-------------------------------- Fin sección categorias ------------------------------------->
-        <!-------------------------------- Inicio sección servicios ------------------------------------->
-        <section class="my-5 card-servi">
-            <h2 class="subtitulo pt-3 text-center">Servicios actuales</h2>
-            <hr class="w-100 bg-light">
-            <div class="container py-3 d-flex justify-content-around">
-                <div class="m-1">
-                    <div class="card text-center " style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Servicio 1</b></h5>
-                            <p class="card-text">Descripción del servicio.</p>
-                            <h5 class="card-title">$50.000</h5>
-                            <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="m-1">
-                    <div class="card text-center " style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Servicio 2</b></h5>
-                            <p class="card-text">Descripción del servicio.</p>
-                            <h5 class="card-title">$50.000</h5>
-                            <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="m-1">
-                    <div class="card text-center" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Servicio 3</b></h5>
-                            <p class="card-text">Descripción del servicio.</p>
-                            <h5 class="card-title">$50.000</h5>
-                            <a href="#" class="btn text-white" style="background-color:#272343">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </section>
+</section>
         <!-------------------------------- Fin sección servicios ------------------------------------->
 
         <!-- Nosotros -->
