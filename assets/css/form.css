@@ -58,6 +58,7 @@ body{
     font-size: 20px;
     color: white;
     cursor: pointer;
+    background-color:rgb(70, 63, 105) ;
 }
 .btnEnviar:hover{
     transform: scale(1.1);

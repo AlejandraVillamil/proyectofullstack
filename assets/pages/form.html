@@ -7,10 +7,10 @@
     <link rel="icon" type="image/gif" href="./assets/Logo/Favicon.png">
     <title>Inicio </title>
 
-    <link href="assets/css/header.css" rel="stylesheet" />
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <link href="assets/css/footer.css" rel="stylesheet" />
-    <link href="assets/css/form.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/form.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -23,7 +23,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light border border-bottom">
             <a class="navbar-brand" href="#">
-                <img src="./assets/Logo/logoNavBar.png" alt="Logo Maki" id="navBarLogo">
+                <img src="../Logo/logoNavBar.png" alt="Logo Maki" id="navBarLogo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,61 +33,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="../../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
-                    <li>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Login </a>
-                              <div class="dropdown-menu mt-3">
-                                <div class="card2 bg-white">
-                                    <div class="card-header mt-4 bg-white">
-                                        <div class="d-flex social_icon">
-                                            <span><i class="fab fa-facebook-square text-secondary"></i></span>
-                                            <span><i class="fab fa-google-plus-square  text-secondary"></i></span>
-                                            <span><i class="fab fa-twitter-square  text-secondary"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="card-body" >
-                                <form id="formLogin" class="form container-fluid">
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend bg-info">
-                                            <span class="input-group-text text-secondary bg-white"><i class="fas fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Usuario">
-                                        
-                                    </div>
-                                    <div class="input-group form-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text text-secondary bg-white"><i class="fas fa-key"></i></span>
-                                        </div>
-                                        <input type="password" class="form-control" placeholder="Contraseña">
-                                    </div>
-                                    <div class="row align-items-center remember text-secondary">
-                                        <input type="checkbox">Recordar
-                                    </div>
-                                  <button type="button" id="btnLogin" class="btn btn-block text-white btn-info" >Ingresar</button>
-                                </form>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-center links  text-secondary">
-                                    ¿No tienes cuenta?<a href="#">Regístrate</a>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <a href="#">¿Olvidaste tu contraseña?</a>
-                                </div>
-                                </div>
-                                </div>	
-                              </div>
-                            </li>
-                          </ul>
-                    
-                    </li>
-                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Iniciar sesión</a>
+                        <a class="nav-link" href="./form.html" >Registrate</a>
+                    </li>     
+                    <li class="nav-item">
+                        <a class="nav-link"  data-toggle="modal" data-target="#login_itech" >Iniciar sesión</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#footer">Contacto</a>
@@ -96,6 +51,33 @@
             </div>
         </nav>
     </header>
+
+    <!--POPUP-->
+    <div class="modal animated fadeIn" id="login_itech" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Password</label>
+                        <input type="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter password">
+                    </div>
+                    <div class="text-center" id="loader_itech">
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!------------------------------- Fin cabecera -------------------------------------->
 
@@ -142,7 +124,7 @@
                 </div>
                 <small id="mensajeAlertTyC" class="mensajeAlert"></small>
         
-                <input type="submit" value="Enviar" class="btnEnviar">
+                <input type="submit" value="Enviar" class="btnEnviar ">
         
           </form>
         <!-------------------------------- Fin sección Formulario ------------------------------------->
@@ -151,28 +133,33 @@
     <!-------------------------------- Fin Main  ------------------------------------->
 
     <!------------------------------ Inicio Footer ----------------------------------->
-    <footer id="footer" class="footer my-5">
-        <div class="container">
-            <img src="./assets/Logo/logoMakyBlanco.png" alt="logo" class="logo-brand" height="100px" width="auto">
-            <ul class="list-inline">
-                <li class="list-inline-item footer-menu"><a href="index.html"> Inicio</a></li>
-                <li class="list-inline-item footer-menu"><a href="#"> Nosotros </a></li>
-                <li class="list-inline-item footer-menu"><a href="#"> Registrarse</a></li>
-                <li class="list-inline-item footer-menu"><a href="#"> Iniciar sesión</a></li>
-            </ul>
-            <ul class="list-unstyled list-inline mt-4">
-                <li class="footer-icon">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-            <small>
-                Derechos reservados @2020
-            </small>
+    <footer class="footer" id="footer">
+        <div class="partFooter">
+            <img src="../Logo/logoMakyBlanco.png" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
+            <a href="#">Services 1 </a>
+            <a href="#">Services 2 </a>
+            <a href="#">Services 3 </a>
+        </div>
+        <div class="partFooter">
+            <h4>Acerca de </h4>
+            <a href="#">About 1 </a>
+            <a href="#">About 2 </a>
+            <a href="#">About 3 </a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-snapchat-square"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
         </div>
     </footer>
+
     <!------------------------------ Inicio Footer ----------------------------------->
 
     <script src="./assets/js/form.js"></script>
